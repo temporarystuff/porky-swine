@@ -1,9 +1,15 @@
 <html>
- <head>
-        <meta http-equiv="refresh" content="5;url="https://www.youtube.com/watch?v=AJvDzgg0Yss/" />
-    </head>
-    <head>
-    </h1><b>How they actually? By subjecting</b></h1>
-        <h6>Redirecting in 5 seconds...</h6>
-    </body>
+<body>
+    <div id="counter">5</div>
+    <script>
+        setInterval(function() {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.replace("https://example.com");
+            }
+        }, 1000);
+    </script>
+</body>
 </html>
